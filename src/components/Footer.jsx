@@ -4,7 +4,7 @@ import LogoFooter from "../assets/logoFooter.svg";
 const Footer = () => {
   const handleReservasClick = () => {
     // Reemplaza 'XXXXXXXXXX' con tu número de WhatsApp y 'Reserva' con tu mensaje predefinido
-    window.location.href = "https://wa.me/3489681555";
+    window.location.href = "https://wa.me/+541123930489";
   };
 
   return (

@@ -51,7 +51,7 @@ const About = () => {
             Cocina abierta, horno de barro, esperando nuestras pizzas hechas con
             masa italiana fermentada entre 24 y 48 horas, que alojan sabores
             argentinos, logrando una fusión con lo mejor de ambas culturas en
-            cada bocado. <br /> <br />
+            cada bocado.<br /> <br />
             Celebramos nuestra identidad con eventos que destacan nuestra pasión
             futbolera y hermandad argentina, honrando las tradiciones de
             nuestros antepasados, respetando la sobremesa y jugando a las cartas

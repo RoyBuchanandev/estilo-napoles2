@@ -16,7 +16,7 @@ const MostOrders = () => {
       <h2 id="menu" className="text-5xl lg:text-7xl text-blue bavi mb-8 lg:mb-16 text-center">
         Las que más salen
       </h2>
-
+      <h3 className="text-xl lg:text-2xl text-gray mb-4 lg:mb-8 text-center">100% artesanal - 100% a la leña</h3>
       <section className="flex flex-wrap justify-between flex-col md:flex-row gap-8">
         
         <article className="card group shadow-xl overflow-hidden">
@@ -153,6 +153,13 @@ const MostOrders = () => {
         </article>
         
       </section>
+         {/* Aquí agregamos el botón "Ver Precios" al final de la sección */}
+         <div className="text-center mt-8">
+         <button className="bg-blue text-white hover:bg-blue-700 font-bold py-2 px-4 rounded" onClick={() => window.open('https://drive.google.com/file/d/1CfYsYqfpN6PsaYqkjAIMhpjwHQ0TWhLp/view?usp=sharing')}>
+  Ver Precios
+</button>
+
+      </div>
     </Layout>
   );
 };

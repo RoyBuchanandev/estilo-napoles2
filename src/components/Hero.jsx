@@ -7,7 +7,7 @@ import "../index.css";
 const ReservasButton = () => {
   const handleReservasClick = () => {
     // Reemplaza 'XXXXXXXXXX' con tu número de WhatsApp y 'Reserva' con tu mensaje predefinido
-    window.location.href = "https://wa.me/3489681555";
+    window.location.href = "https://wa.me/+541123930489";
   };
 
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="mb-14 text-center text-white">
             <h1 className="text-7xl md:text-8xl bavi unique-shadow">
               Masa Italiana, <br />
-              Gusto Argentino
+              Gusto Argentino.
             </h1>
           </div>
 
