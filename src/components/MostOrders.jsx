@@ -9,6 +9,16 @@ import Pepperoni from "../assets/imgs/peperoni.png";
 import Especial from "../assets/imgs/especial.png";
 import Fuga from "../assets/imgs/fugazzeta.png";
 import Anchoa from "../assets/imgs/anchoa.png";
+import Bianca from "../assets/imgs/bianca.png";
+import Faina from "../assets/imgs/faina.png";
+import Flancito from "../assets/imgs/flancito.png";
+import Funghi from "../assets/imgs/funghi.png";
+import Panchito from "../assets/imgs/panchito.png";
+import Tiramisu from "../assets/imgs/tiramisu.png";
+import Marinara from "../assets/imgs/marinara.png";
+import Fresco from "../assets/imgs/fresco.png";
+import Muzza from "../assets/imgs/muzza.png";
+import Dip from "../assets/imgs/dip.png";
 
 const MostOrders = () => {
   return (
@@ -148,6 +158,137 @@ const MostOrders = () => {
             </span>
             <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
               Salsa pomodoro, muzzarella, pepperoni, verdeo
+            </p>
+          </div>
+        </article>
+
+            {/* Aquí empiezan las nuevas tarjetas */}
+        
+            <article className="card group shadow-xl overflow-hidden">
+          <div className="image">
+            <img className="drop-shadow-lg" src={Marinara} alt="" />
+          </div>
+          <div className="card-info text-center flex justify-center">
+            <span className="bavi text-4xl text-blue group-hover:text-white duration-300 ease-in-out">
+            Marinara
+            </span>
+            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+            Salsa pomodoro, láminas de ajo, albahaca, oliva extra virgen
+            </p>
+          </div>
+        </article>
+
+        <article className="card group shadow-xl">
+          <div className="image">
+            <img className="drop-shadow-lg" src={Funghi} alt="" />
+          </div>
+          <div className="card-info">
+            <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
+            Funghi
+            </span>
+            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+            Salsa pomodoro, muzzarella, provolone, portobellos a la manteca y aceite de perejil
+            </p>
+          </div>
+        </article>
+
+        <article className="card group shadow-xl">
+          <div className="image">
+            <img className="drop-shadow-lg" src={Muzza} alt="" />
+          </div>
+          <div className="card-info">
+            <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
+            Muzza
+            </span>
+            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+              Salsa pomodoro, muzzarella, orégano, aceitunas
+            </p>
+          </div>
+        </article>
+                    {/* Aquí empiezan las nuevas tarjetas */}
+        
+                    <article className="card group shadow-xl overflow-hidden">
+          <div className="image">
+            <img className="drop-shadow-lg" src={Faina} alt="" />
+          </div>
+          <div className="card-info text-center flex justify-center">
+            <span className="bavi text-4xl text-blue group-hover:text-white duration-300 ease-in-out">
+            Faina
+            </span>
+            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+            Faina clásico casero
+            </p>
+          </div>
+        </article>
+
+        <article className="card group shadow-xl">
+          <div className="image">
+            <img className="drop-shadow-lg" src={Panchito} alt="" />
+          </div>
+          <div className="card-info">
+            <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
+            Pancho ItaloArgentino
+            </span>
+            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+            Masa de pizza, salchicha alemana, mayonesa de ajo, provenzal, salsa picante, ajíes en vinagre
+            </p>
+          </div>
+        </article>
+
+        <article className="card group shadow-xl">
+          <div className="image">
+            <img className="drop-shadow-lg" src={Fresco} alt="" />
+          </div>
+          <div className="card-info">
+            <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
+            Fresco y burrata
+            </span>
+            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+              Colchón de rúcula, cherrys, pasas, aceitunas negras, burrata y pan del día
+            </p>
+          </div>
+        </article>
+
+                            {/* Aquí empiezan las nuevas tarjetas */}
+        
+                            <article className="card group shadow-xl overflow-hidden">
+          <div className="image">
+            <img className="drop-shadow-lg" src={Dip} alt="" />
+          </div>
+          <div className="card-info text-center flex justify-center">
+            <span className="bavi text-4xl text-blue group-hover:text-white duration-300 ease-in-out">
+            Dip para borde
+            </span>
+            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+            Pasta de berenjena ahumada al horno de barro
+            </p>
+          </div>
+        </article>
+
+        <article className="card group shadow-xl">
+          <div className="image">
+            <img className="drop-shadow-lg" src={Flancito} alt="" />
+          </div>
+          <div className="card-info">
+            <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
+            Flan
+            </span>
+            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+            Flan de dulce de leche
+            </p>
+          </div>
+        </article>
+
+        <article className="card group shadow-xl">
+          <div className="image">
+            <img className="drop-shadow-lg" src={Tiramisu} alt="" />
+          </div>
+          <div className="card-info">
+            <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
+            Tiramisu
+            </span>
+            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+             Tiramisu casero
             </p>
           </div>
         </article>
