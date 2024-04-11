@@ -82,7 +82,7 @@ const MostOrders = () => {
             </span>
             <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
               Salsa pomodoro, muzzarella, mortadela de pistachos, ajíes en
-              vinagre, albahaca y aceite de oliva extra vírgen de ajo.
+              vinagre, albahaca y aceite de oliva extra vírgen de ajo
             </p>
           </div>
         </article>
@@ -149,7 +149,7 @@ const MostOrders = () => {
       <img src={Vegetarian} alt="Vegetariano" className="w-6 h-6 ml-2 mt-1" />
     </span>
     <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
-      Salsa pomodoro, bocconcino, albahaca, oliva extra virgen al ajo.
+      Salsa pomodoro, bocconcino, albahaca, oliva extra virgen al ajo
     </p>
   </div>
 </article>
@@ -257,17 +257,17 @@ const MostOrders = () => {
 
         <article className="card group shadow-xl">
   <div className="image">
-    <img className="drop-shadow-lg" src={Vegana} alt="" />
+    <img className="drop-shadow-lg" src={Margherita} alt="" />
   </div>
   <div className="card-info text-center flex justify-center">
     <span className="flex items-center">
       <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
-        vegana
+        Vegana
       </span>
       <img src={Vegan} alt="Vegetariano" className="w-6 h-6 ml-2 mt-1" />
     </span>
     <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
-      vegana
+    Salsa pomodoro, queso vegano, albahaca, oliva extra virgen al ajo
     </p>
   </div>
 </article>
@@ -279,12 +279,12 @@ const MostOrders = () => {
   <div className="card-info text-center flex justify-center">
     <span className="flex items-center">
       <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
-        la de papa
+        Papa
       </span>
       <img src={Vegetarian} alt="Vegetariano" className="w-6 h-6 ml-2 mt-1" />
     </span>
     <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
-      Tiramisu casero
+    Sin salsa, muzzarella, papa en rodajas, romero, oliva extra virgen, pesto
     </p>
   </div>
 </article>
