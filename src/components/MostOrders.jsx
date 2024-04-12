@@ -32,6 +32,7 @@ const MostOrders = () => {
       </h2>
       <h3 className="text-xl lg:text-2xl text-gray mb-4 lg:mb-8 text-center">100% artesanal - 100% a la leña</h3>
       <h3 className="text-xl lg:text-2xl text-gray mb-4 lg:mb-8 text-center">Masa 70% de hidratación y fermentación en frio de 24hs</h3>
+      <h3 className="text-xl lg:text-2xl text-gray mb-4 lg:mb-8 text-center">Opciones vegetarianas y veganas</h3>
       <section className="flex flex-wrap justify-between flex-col md:flex-row gap-8">
         
       <article className="card group shadow-xl overflow-hidden">
