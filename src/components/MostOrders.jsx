@@ -284,7 +284,7 @@ const MostOrders = () => {
       <img src={Vegetarian} alt="Vegetariano" className="w-6 h-6 ml-2 mt-1" />
     </span>
     <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
-    Sin salsa, muzzarella, papa en rodajas, romero, oliva extra virgen, pesto
+    Muzzarella, papa en rodajas, romero, oliva extra virgen, pesto
     </p>
   </div>
 </article>
