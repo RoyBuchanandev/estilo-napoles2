@@ -28,8 +28,9 @@ const Hero = () => {
         <div className="w-full">
           <div className="mb-14 text-center text-white">
             <h1 className="text-7xl md:text-8xl bavi unique-shadow">
-              Masa Italiana, <br />
-              Gusto Argentino.
+              Todo casero, <br />
+              Todo el día, <br />
+              Todo nacional.
             </h1>
           </div>
 

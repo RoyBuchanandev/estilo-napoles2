@@ -27,12 +27,10 @@ import Vegan from "../assets/imgs/vegan.png";
 const MostOrders = () => {
   return (
     <Layout className={"h-fit"}>
+      
       <h2 id="menu" className="text-5xl lg:text-7xl text-blue bavi mb-8 lg:mb-16 text-center">
         Nuestro Menú
       </h2>
-      <h3 className="text-xl lg:text-2xl text-gray mb-4 lg:mb-8 text-center">100% artesanal - 100% a la leña</h3>
-      <h3 className="text-xl lg:text-2xl text-gray mb-4 lg:mb-8 text-center">Masa 70% de hidratación y fermentación en frio de 24hs</h3>
-      <h3 className="text-xl lg:text-2xl text-gray mb-4 lg:mb-8 text-center">Opciones vegetarianas y veganas</h3>
       <section className="flex flex-wrap justify-between flex-col md:flex-row gap-8">
         
       <article className="card group shadow-xl overflow-hidden">
@@ -62,7 +60,7 @@ const MostOrders = () => {
   <div className="card-info text-center flex justify-center">
     <span className="flex items-center">
       <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
-        Barrilete Cosmico
+        Barrilete Cósmico
       </span>
       <img src={Vegetarian} alt="Vegetariano" className="w-6 h-6 ml-2 mt-1" />
     </span>
@@ -280,7 +278,7 @@ const MostOrders = () => {
   <div className="card-info text-center flex justify-center">
     <span className="flex items-center">
       <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
-        Papa
+        Papa & Pesto
       </span>
       <img src={Vegetarian} alt="Vegetariano" className="w-6 h-6 ml-2 mt-1" />
     </span>

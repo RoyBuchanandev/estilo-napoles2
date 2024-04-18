@@ -1,5 +1,8 @@
 import React from "react";
 import LogoFooter from "../assets/logoFooter.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 
 const Footer = () => {
   const handleReservasClick = () => {
@@ -37,15 +40,27 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="bavi mb-4 text-xl">Visitanos</h3>
-            <p className="text-sm mb-6">
-              Av. Ameghino 598, Campana, Bs As. <br /> (Esta el Diego pintado en
-              la entrada)
-            </p>
-            <button onClick={handleReservasClick} className="bg-white text-blue text-sm px-4 py-2 rounded-lg font-medium hover:bg-white/90 duration-200 ease-in-out">
-              Reservas
-            </button>
-          </div>
+  <h3 className="bavi mb-4 text-xl">Visítanos</h3>
+  <p className="text-sm mb-6">
+    Av. Ameghino 598, Campana, Bs As. <br /> (Está el Diego pintado en la esquina)
+  </p>
+  <p className="text-blue">
+    Teléfono: <a href="tel:+54123456789">+54 11 2393-0489</a>
+  </p>
+  <div className="flex flex-col lg:flex-row lg:items-center">
+    <a href="https://twitter.com/EstiloNapoles" target="_blank" className="mb-2 lg:mb-0 lg:mr-4">
+      <FontAwesomeIcon icon={faTwitter} size="2x" />
+    </a>
+    <a href="https://www.instagram.com/estilonapoles.campana/?hl=en" target="_blank">
+      <FontAwesomeIcon icon={faInstagram} size="2x" />
+    </a>
+  </div>
+  <button onClick={handleReservasClick} className="bg-white text-blue text-sm px-4 py-2 rounded-lg font-medium hover:bg-white/90 duration-200 ease-in-out mt-4">
+    Reservas
+  </button>
+</div>
+
+
         </div>
       </section>
     </footer>

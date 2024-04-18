@@ -40,7 +40,7 @@ const NavList = ({ closeMenu }) => {
             to="about"
             className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
           >
-            Nosotros
+            Nosotrxs
           </Link>
         </Typography>
         <Typography

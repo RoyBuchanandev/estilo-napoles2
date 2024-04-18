@@ -46,21 +46,14 @@ const About = () => {
           </div>
         </figure>
         <div className="w-full lg:w-1/2">
-          <h2 className="text-5xl lg:text-7xl text-blue bavi mb-8">Nosotros</h2>
-          <p className="font-poppins text-lg text-gray">
-            Cocina abierta, horno de barro, esperando nuestras pizzas hechas con
-            masa italiana fermentada entre 24 y 48 horas, que alojan sabores
-            argentinos, logrando una fusión con lo mejor de ambas culturas en
-            cada bocado.<br /> <br />
-            Celebramos nuestra identidad con eventos que destacan nuestra pasión
-            futbolera y hermandad argentina, honrando las tradiciones de
-            nuestros antepasados, respetando la sobremesa y jugando a las cartas
-            con un postrecito de por medio. <br /> <br />
-            Formamos un lugar donde los chicos pueden pintar, y los grandes
-            pueden pedir que escuchar, para que los artistas puedan venir a
-            dejar su arte entre nuestras paredes y compartir momentos llenos de
-            amigos y buena comida.
-          </p>
+          <h2 className="text-5xl lg:text-7xl text-blue bavi mb-8">Nosotrxs</h2>
+          <p>Nuestras pizzas, elaboradas a partir de un prefermento llamado Biga, son una fusión de las culturas italiana y argentina. Con una masa de alta hidratación y fermentada entre 24 y 48 horas, incorporamos sabores argentinos para crear la pizza italoargentina, utilizando un proceso 100% artesanal pero con los gustos y las cantidades que caracterizan nuestra tierra.</p>
+<p>Todo lo que hacemos es completamente artesanal y del día. Estiramos, armamos y horneamos a la vista.</p>
+<p>Nuestra cocina está abierta, rodeando el horno de barro que es el centro de nuestro espacio, para que puedan disfrutar de la experiencia de comer en la barra de madera mientras nos ven cocinar; es un buen espectáculo: nosotros siendo nosotros.</p>
+<p>También pueden optar por sentarse afuera, en la vereda, o en el patio trasero, donde encontrarán una huerta y calefacción.</p>
+<p>Nos encanta celebrar nuestra identidad con eventos que resaltan nuestra pasión futbolera y la hermandad argentina, honrando las tradiciones de nuestros antepasados, respetando la sobremesa y jugando a las cartas con un postre de por medio.</p>
+<p>Creamos un espacio donde los niños pueden pintar y los adultos pueden elegir qué música escuchar, para que los artistas puedan venir a dejar su arte entre nuestras paredes y compartir momentos llenos de amigos y buena comida.</p>
+<p>¡Bienvenidos a nuestro hogar!</p>
         </div>
       </Layout>
       <div className=" z-50 bg-[url('./assets/bordeNegro.svg')] w-full h-6 bg-no-repeat rotate-180"></div>
