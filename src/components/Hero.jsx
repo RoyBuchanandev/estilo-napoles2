@@ -35,7 +35,6 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full">
-
             {/* Menu button */}
 
             <Link smooth={true} to="servicios" offset={-100} duration={1300}>
@@ -48,7 +47,6 @@ const Hero = () => {
 
             {/* Reserva button */}
             <ReservasButton />
-
           </div>
         </div>
       </Layout>

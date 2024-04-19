@@ -37,10 +37,10 @@ const NavList = ({ closeMenu }) => {
           <Link
             smooth={true}
             spy={true}
-            to="about"
+            to="menu"
             className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
           >
-            Nosotrxs
+            Menú
           </Link>
         </Typography>
         <Typography
@@ -51,10 +51,10 @@ const NavList = ({ closeMenu }) => {
           <Link
             smooth={true}
             spy={true}
-            to="menu"
+            to="about"
             className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
           >
-            Menú
+            Nosotrxs
           </Link>
         </Typography>
 
@@ -100,11 +100,11 @@ const NavList = ({ closeMenu }) => {
           <Link
             smooth={true}
             spy={true}
-            to="about"
+            to="menu"
             onClick={handleClose}
             className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
           >
-            Nosotros
+            Menú
           </Link>
         </Typography>
         <Typography
@@ -115,11 +115,11 @@ const NavList = ({ closeMenu }) => {
           <Link
             smooth={true}
             spy={true}
-            to="menu"
+            to="about"
             onClick={handleClose}
             className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
           >
-            Menú
+            Nosotrxs
           </Link>
         </Typography>
 

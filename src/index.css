@@ -66,6 +66,15 @@
   background-color: transparent;
   transition: all 0.5s ease;
 }
+.special-image {
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: fill;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
 
 .card-info {
   display: flex;
@@ -91,6 +100,9 @@
 .card:hover .image {
   transform: scale(2) translate(-50%, -35%) rotate(90deg);
 }
+.card:hover .special-image {
+  transform: scale(1.4);
+}
 
 @media only screen and (max-width: 767px) {
   .card {
@@ -109,8 +121,8 @@
 .parent {
   display: grid;
   align-content: center;
-  grid-template-columns: repeat(4, 0.3fr);
-  grid-template-rows: repeat(3, 0.4fr);
+  grid-template-columns: repeat(4, 0.4fr);
+  grid-template-rows: repeat(3, 0.7fr);
   grid-column-gap: 6px;
   grid-row-gap: 6px;
   }
