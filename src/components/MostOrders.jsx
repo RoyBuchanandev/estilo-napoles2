@@ -35,8 +35,11 @@ const MostOrders = () => {
         </h2>
         <p className="font-poppins text-base text-gray w-full md:w-[80%] lg:w-[80%] text-center mb-8 lg:mb-16">
           Cocción a la leña en horno de barro, hechas con masa de 70% de
-          hidratación y fermentación en frío por 24 hs. <br /> Contamos con opciones{" "}
-          <span className="text-blue">veganas <span className="text-gray">y</span> vegetarianas</span>.
+          hidratación y fermentación en frío por 24 hs. <br /> Algunas pizzas tienen la opción de transformarlas en{" "}
+          <span className="text-blue">
+      veganas 
+      <img src={Vegetarian} alt="Vegano" className="inline-block w-6 h-6" />
+    </span>.
         </p>
       </div>
       <section className="flex flex-wrap justify-between flex-col md:flex-row gap-8">
@@ -286,8 +289,7 @@ const MostOrders = () => {
             <span className="flex items-center gap-2">
               <span className="bavi text-4xl text-blue group-hover:text-white duration-300 ease-in-out">
                 Faina
-              </span>
-              <img src={Vegetarian} alt="Vegetariano" className="w-12" />
+              </span> 
             </span>
             <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
               Disfruta de este acompañamiento tradicional con nuestras pizzas
@@ -319,7 +321,6 @@ const MostOrders = () => {
               <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
                 Fresco y burrata
               </span>
-              <img src={Vegetarian} alt="Vegetariano" className="w-12" />
             </span>
             <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
               Colchón de rúcula, cherrys, pasas, aceitunas negras, burrata y pan
@@ -339,7 +340,6 @@ const MostOrders = () => {
               <span className="bavi text-4xl text-blue group-hover:text-white duration-300 ease-in-out">
                 Dip para borde
               </span>
-              <img src={Vegetarian} alt="Vegetariano" className="w-12" />
             </span>
             <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
               Pasta de berenjena ahumada al horno de barro
@@ -392,19 +392,30 @@ const MostOrders = () => {
           </div>
         </article>
       </section>
-      {/* Aquí agregamos el botón "Ver Precios" al final de la sección */}
-      <div className="text-center mt-14">
-        <button
-          className="animate-bounce bg-blue text-white hover:bg-blue-700 font-semibold py-3 px-7 rounded-lg"
-          onClick={() =>
-            window.open(
-              "https://drive.google.com/file/d/1Rxgtw-inmKYIKIfUgWw-d-Sjq40d8Zpd/view?usp=sharing"
-            )
-          }
-        >
-          Ver Precios
-        </button>
-      </div>
+{/* Aquí agregamos los botones "Ver Precios" y "Reservar" al final de la sección */}
+<div className="text-center mt-14">
+  <button
+    className="animate-bounce bg-blue text-white hover:bg-blue-700 font-semibold py-3 px-7 rounded-lg mr-4"
+    onClick={() =>
+      window.open(
+        "https://drive.google.com/file/d/1Rxgtw-inmKYIKIfUgWw-d-Sjq40d8Zpd/view?usp=sharing"
+      )
+    }
+  >
+    Ver Precios
+  </button>
+  <button
+    className="animate-bounce bg-red text-white hover:bg-red-700 font-semibold py-3 px-7 rounded-lg"
+    onClick={() =>
+      window.open(
+       " https://wa.me/+541123930489"
+      )
+    }
+  >
+    Reservar
+  </button>
+</div>
+
     </Layout>
   );
 };
