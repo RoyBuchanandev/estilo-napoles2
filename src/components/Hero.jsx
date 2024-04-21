@@ -26,13 +26,14 @@ const Hero = () => {
       <div className="overflow-x-hidden absolute z-0 w-full backdrop-brightness-[.5] h-svh lg:h-[100vh]"></div>
       <Layout id={"home"} className="relative z-10 flex items-center">
         <div className="w-full">
-          <div className="mb-14 text-center text-white">
-            <h1 className="text-7xl md:text-8xl bavi unique-shadow">
-              Todo el día, <br />
-              Todo casero, <br />
-              Todo nacional.
-            </h1>
-          </div>
+        <div className="mb-14 text-center text-white">
+  <h1 className="text-5xl md:text-6xl lg:text-7xl bavi unique-shadow">
+    Todo del día, <br />
+    Todo casero, <br />
+    Todo nacional.
+  </h1>
+</div>
+
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full">
             {/* Menu button */}

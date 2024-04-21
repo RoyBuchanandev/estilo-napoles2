@@ -23,6 +23,7 @@ import Rucola from "../assets/imgs/rucola.png";
 import Vegetarian from "../assets/imgs/vegetarian.png";
 import QuesoDulce from "../assets/imgs/queso-dulce.png";
 
+
 const MostOrders = () => {
   return (
     <Layout id="menu" className={"h-fit"}>
@@ -33,8 +34,15 @@ const MostOrders = () => {
         >
           Nuestro Menú
         </h2>
+        <h3 className="flex items-center text-xl lg:text-3xl text-red bavi mb-4 text-center">
+  <i className="fas fa-flag icon-mr"></i> Pizzeria Italoargenta
+</h3>
+
+
+
+        
         <p className="font-poppins text-base text-gray w-full md:w-[80%] lg:w-[80%] text-center mb-8 lg:mb-16">
-          Cocción a la leña en horno de barro, hechas con masa de 70% de
+          Cocción a la leña en horno de barro, masa de 70% de
           hidratación y fermentación en frío por 24 hs. <br /> Algunas pizzas tienen la opción de transformarlas en{" "}
           <span className="text-blue">
       veganas 
