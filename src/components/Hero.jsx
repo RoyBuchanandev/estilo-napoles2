@@ -28,8 +28,8 @@ const Hero = () => {
         <div className="w-full">
           <div className="mb-14 text-center text-white">
             <h1 className="text-7xl md:text-8xl bavi unique-shadow">
-              Todo casero, <br />
               Todo el día, <br />
+              Todo casero, <br />
               Todo nacional.
             </h1>
           </div>

@@ -40,6 +40,29 @@ const MostOrders = () => {
       veganas 
       <img src={Vegetarian} alt="Vegano" className="inline-block w-6 h-6" />
     </span>.
+    {/* Aquí agregamos los botones "Ver Precios" y "Reservar" al final de la sección */}
+<div className="text-center mt-14">
+  <button
+    className="animate-bounce bg-blue text-white hover:bg-blue-700 font-semibold py-3 px-7 rounded-lg mr-4"
+    onClick={() =>
+      window.open(
+        "https://drive.google.com/file/d/1Rxgtw-inmKYIKIfUgWw-d-Sjq40d8Zpd/view?usp=sharing"
+      )
+    }
+  >
+    Ver Precios
+  </button>
+  <button
+    className="animate-bounce bg-red text-white hover:bg-red-700 font-semibold py-3 px-7 rounded-lg"
+    onClick={() =>
+      window.open(
+       " https://wa.me/+541123930489"
+      )
+    }
+  >
+    Reservar
+  </button>
+</div>
         </p>
       </div>
       <section className="flex flex-wrap justify-between flex-col md:flex-row gap-8">
@@ -52,7 +75,6 @@ const MostOrders = () => {
               <span className="bavi text-4xl text-blue group-hover:text-white duration-300 ease-in-out">
                 Cuatroque
               </span>
-              <img src={Vegetarian} alt="Vegetariano" className="w-12" />
             </span>
             <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
               Salsa pomodoro, muzzarella, provolone, parmesano, queso azul,
@@ -298,19 +320,23 @@ const MostOrders = () => {
         </article>
 
         <article className="card group shadow-xl">
-          <div className="image">
-            <img className="drop-shadow-lg" src={Panchito} alt="" />
-          </div>
-          <div className="card-info">
-            <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
-              Pancho ItaloArgentino
-            </span>
-            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
-              Masa de pizza, salchicha alemana, mayonesa de ajo, provenzal,
-              salsa picante, ajíes en vinagre
-            </p>
-          </div>
-        </article>
+  <div className="image">
+    <img className="drop-shadow-lg" src={Panchito} alt="" />
+  </div>
+  <div className="card-info">
+    <span className="flex items-center gap-2">
+      <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
+        Pancho ItaloArgentino
+      </span>
+      <img src={Vegetarian} alt="Vegetariano" className="w-12" />
+    </span>
+    <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+      Masa de pizza, salchicha alemana, mayonesa de ajo, provenzal, salsa
+      picante, ajíes en vinagre
+    </p>
+  </div>
+</article>
+
 
         <article className="card group shadow-xl">
           <div className="image">
@@ -392,29 +418,7 @@ const MostOrders = () => {
           </div>
         </article>
       </section>
-{/* Aquí agregamos los botones "Ver Precios" y "Reservar" al final de la sección */}
-<div className="text-center mt-14">
-  <button
-    className="animate-bounce bg-blue text-white hover:bg-blue-700 font-semibold py-3 px-7 rounded-lg mr-4"
-    onClick={() =>
-      window.open(
-        "https://drive.google.com/file/d/1Rxgtw-inmKYIKIfUgWw-d-Sjq40d8Zpd/view?usp=sharing"
-      )
-    }
-  >
-    Ver Precios
-  </button>
-  <button
-    className="animate-bounce bg-red text-white hover:bg-red-700 font-semibold py-3 px-7 rounded-lg"
-    onClick={() =>
-      window.open(
-       " https://wa.me/+541123930489"
-      )
-    }
-  >
-    Reservar
-  </button>
-</div>
+
 
     </Layout>
   );
