@@ -43,7 +43,7 @@ const MostOrders = () => {
         
         <p className="font-poppins text-base text-gray w-full md:w-[80%] lg:w-[80%] text-center mb-8 lg:mb-16">
           Cocción a la leña en horno de barro, masa de 70% de
-          hidratación y fermentación en frío por 24 hs. <br /> Algunas pizzas tienen la opción de transformarlas en{" "}
+          hidratación y fermentación en frío por 24 hs. <br /> Algunas pizzas y el pancho tienen la opción de transformarlas en{" "}
           <span className="text-blue">
       veganas 
       <img src={Vegetarian} alt="Vegano" className="inline-block w-6 h-6" />
@@ -100,7 +100,6 @@ const MostOrders = () => {
               <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
                 Barrilete Cósmico
               </span>
-              <img src={Vegetarian} alt="Vegetariano" className="w-12" />
             </span>
             <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
               Salsa pomodoro, bocconcino, albahaca, crema de pesto, aceite de
@@ -334,7 +333,7 @@ const MostOrders = () => {
   <div className="card-info">
     <span className="flex items-center gap-2">
       <span className="bavi text-3xl text-blue group-hover:text-white duration-300 ease-in-out">
-        Pancho ItaloArgentino
+        Pancho ItaloArgento
       </span>
       <img src={Vegetarian} alt="Vegetariano" className="w-12" />
     </span>
