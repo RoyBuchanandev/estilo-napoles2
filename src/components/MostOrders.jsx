@@ -310,21 +310,23 @@ const MostOrders = () => {
 
         {/* Aquí empiezan las nuevas tarjetas */}
 
-        <article className="card group shadow-xl overflow-hidden">
-          <div className="image">
-            <img className="drop-shadow-lg" src={Faina} alt="" />
-          </div>
-          <div className="card-info text-center flex justify-center">
-            <span className="flex items-center gap-2">
-              <span className="bavi text-4xl text-blue group-hover:text-white duration-300 ease-in-out">
-                Faina
-              </span> 
-            </span>
-            <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
-              Disfruta de este acompañamiento tradicional con nuestras pizzas
-            </p>
-          </div>
-        </article>
+        <article className="card group shadow-xl">
+  <div className="image">
+    <img className="drop-shadow-lg" src={Faina} alt="" />
+  </div>
+  <div className="card-info text-center flex justify-center">
+    <span className="flex items-center gap-2">
+      <span className="bavi text-4xl text-blue group-hover:text-white duration-300 ease-in-out">
+        Faina
+      </span> 
+      <img src={Vegetarian} alt="Vegetariano" className="w-12 ml-2" /> {/* Aquí se agrega el logo */}
+    </span>
+    <p className="text-gray group-hover:text-white duration-500 ease-in-out px-6">
+      Disfruta de este acompañamiento tradicional con nuestras pizzas
+    </p>
+  </div>
+</article>
+
 
         <article className="card group shadow-xl">
   <div className="image">
