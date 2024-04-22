@@ -43,9 +43,9 @@ const MostOrders = () => {
         
         <p className="font-poppins text-base text-gray w-full md:w-[80%] lg:w-[80%] text-center mb-8 lg:mb-16">
           Cocción a la leña en horno de barro, masa de 70% de
-          hidratación y fermentación en frío por 24 hs. <br /> Algunas pizzas y el pancho tienen la opción de transformarlas en{" "}
+          hidratación y fermentación en frío por 24 hs. <br /> Algunas pizzas y el pancho tienen opción{" "}
           <span className="text-blue">
-      veganas 
+      vegana
       <img src={Vegetarian} alt="Vegano" className="inline-block w-6 h-6" />
     </span>.
     {/* Aquí agregamos los botones "Ver Precios" y "Reservar" al final de la sección */}
