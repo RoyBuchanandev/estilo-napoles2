@@ -85,7 +85,7 @@ const About = () => {
           <p className="text-gray">¡Bienvenidos a nuestro hogar!</p>
         </div>
       </Layout>
-      <div className="z-50 bg-[url('./assets/bordeNegro.svg')] w-full h-6 bg-no-repeat rotate-180 -mt-1"></div>
+      
     </>
   );
 };

@@ -51,7 +51,7 @@ const Hero = () => {
           </div>
         </div>
       </Layout>
-      <div className="absolute -bottom-[1px] z-50 bg-[url('./assets/bordeIrregularFino.svg')] w-full h-6 bg-no-repeat rotate-180"></div>
+      <div className="absolute -bottom-[1px] z-50 bg-[url('./assets/whiteNavBorder.svg')] w-full h-6 bg-no-repeat rotate-180"></div>
     </div>
   );
 };
