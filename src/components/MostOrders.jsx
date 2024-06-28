@@ -28,7 +28,7 @@ const MostOrders = () => {
     <Layout id="menu" className={"h-fit py-10 lg:py-14"}>
       <div className="flex flex-col items-center ">
         <h2 className="text-5xl lg:text-7xl text-blue bavi mb-2 text-center drop-shadow-blue">
-          Nuestro Menú
+          Nuestro Menu
         </h2>
         <h3 className="flex items-center text-2xl lg:text-4xl text-red/80 bavi mb-4 text-center drop-shadow-red">
           <i className="fas fa-flag icon-mr"></i> Pizzeria Italoargenta
@@ -47,7 +47,7 @@ const MostOrders = () => {
               className="drop-shadow-blue animate-bounce bg-blue text-white hover:bg-blue-700 font-semibold py-3 px-7 rounded-lg mr-4"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1dCMYVytBdovWXY3_Dx9k6psH18ou7yhn/view?usp=sharing"
+                  "https://drive.google.com/file/d/1pQIeZJMDf7Zx833yKPsP-0o4JshZEYa6/view?usp=drive_link"
                 )
               }
             >
