@@ -7,47 +7,49 @@ import AboutPic4 from "../assets/imgs/4.jpg";
 
 const About = () => {
   return (
-    <>
+    <section className="bg-blue/5">
+      <div className="bg-[url('./assets/whiteNavBorder.svg')] w-full h-6 bg-no-repeat"></div>
       <Layout
         id="about"
         className={
-          "flex flex-col lg:flex-row items-center justify-between pb-24"
+          "flex flex-col lg:flex-row items-center justify-between py-8 h-fit"
         }
       >
         <figure className="w-full h-full lg:w-[45%] flex justify-center">
           <div className="parent">
             <div className="div1">
               <img
-                className="rounded-lg shadow-xl w-full h-full object-cover"
+                className="rounded-lg shadow-md w-full h-full object-cover"
                 src={AboutPic1}
                 alt=""
               />
             </div>
             <div className="div2">
               <img
-                className="rounded-lg shadow-xl w-full h-full object-cover"
+                className="rounded-lg shadow-md w-full h-full object-cover"
                 src={AboutPic3}
                 alt=""
               />
             </div>
             <div className="div3">
               <img
-                className="rounded-lg shadow-xl w-full h-full object-cover"
+                className="rounded-lg shadow-md w-full h-full object-cover"
                 src={AboutPic4}
                 alt=""
               />
             </div>
             <div className="div4">
               <img
-                className="rounded-lg shadow-xl w-full h-full object-cover"
+                className="rounded-lg shadow-md w-full h-full object-cover"
                 src={AboutPic2}
                 alt=""
               />
             </div>
           </div>
         </figure>
+
         <div className="w-full lg:w-1/2">
-          <h2 className="text-5xl lg:text-7xl text-blue bavi mb-4">Nosotrxs</h2>
+          <h2 className="text-5xl lg:text-7xl text-blue bavi mb-4 drop-shadow-blue">Nosotrxs</h2>
           <p className="text-gray">
             Nuestras pizzas, elaboradas a partir de un prefermento llamado Biga,
             son una fusión de las culturas italiana y argentina. Con una masa de
@@ -85,8 +87,8 @@ const About = () => {
           <p className="text-gray">¡Bienvenidos a nuestro hogar!</p>
         </div>
       </Layout>
-      
-    </>
+      <div className="bg-[url('./assets/whiteNavBorder.svg')] w-full h-6 bg-no-repeat rotate-180"></div>
+    </section>
   );
 };
 

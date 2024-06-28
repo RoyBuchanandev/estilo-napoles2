@@ -11,8 +11,12 @@
   font-family: "bavi";
 }
 
-.unique-shadow {
-  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+.drop-shadow-blue {
+  filter: drop-shadow(0px 4px 6px rgba(115, 173, 221, 0.1)); /* Adjust shadow color here */
+}
+
+.drop-shadow-red {
+  filter: drop-shadow(0px 4px 6px rgba(180, 33, 41, 0.1)); /* Adjust shadow color here */
 }
 
 .card-shadow {

@@ -2,22 +2,17 @@ import React from "react";
 import { Link } from "react-scroll";
 import LogoFooter from "../assets/logoFooter.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faXTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-  const handleReservasClick = () => {
-    // Reemplaza 'XXXXXXXXXX' con tu número de WhatsApp y 'Reserva' con tu mensaje predefinido
-    window.location.href = "https://wa.me/+541123930489";
-  };
-
   return (
     <footer id="footer" className="w-full bg-black">
       <section className="mx-auto px-4 md:px-8 lg:px-0 py-14 lg:max-w-[1120px] font-poppins flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-0">
         <div>
           <figure>
-            <a title="Estilo Nápoles" href="#">
-              <img className="w-52 lg:w-64" src={LogoFooter} alt="" />
-            </a>
+            <Link to="home" smooth={true} title="Estilo Nápoles">
+              <img className="w-52 lg:w-64 cursor-pointer" src={LogoFooter} alt="" />
+            </Link>
           </figure>
         </div>
 
@@ -25,18 +20,23 @@ const Footer = () => {
           <div className="border-b-[1px] border-t-[1px] border-white/15 lg:p-0 pt-6 pb-4 lg:border-0">
             <h3 className="bavi mb-3 text-xl">Navegacion</h3>
             <ul className="text-sm">
-              <li className="mb-4 hover:text-blue duration-200 ease-in-out">
-                <Link to="home" smooth={true} title="Home" href="#">
+              <li className="mb-4 hover:text-blue duration-200 ease-in-out cursor-pointer text-white/90">
+                <Link to="home" smooth={true} title="Home">
                   Home
                 </Link>
               </li>
-              <li className="mb-4 hover:text-blue duration-200 ease-in-out">
-                <Link to="about" smooth={true} title="Nosotros" href="#">
+              <li className="mb-4 hover:text-blue duration-200 ease-in-out cursor-pointer text-white/90">
+                <Link to="about" smooth={true} title="Nosotros" offset={-50}>
                   Nosotrxs
                 </Link>
               </li>
-              <li className="mb-4 hover:text-blue duration-200 ease-in-out">
-                <Link to="menu" smooth={true} title="Menú" href="#">
+              <li className="mb-4 hover:text-blue duration-200 ease-in-out cursor-pointer text-white/90">
+                <Link to="events" smooth={true} title="Nosotros" offset={-60}>
+                  Eventxs
+                </Link>
+              </li>
+              <li className="mb-4 hover:text-blue duration-200 ease-in-out cursor-pointer text-white/90">
+                <Link to="menu" smooth={true} title="Menú" offset={-60}>
                   Menú
                 </Link>
               </li>
@@ -45,34 +45,59 @@ const Footer = () => {
 
           <div>
             <h3 className="bavi mb-4 text-xl">Visítanos</h3>
-            <p className="text-sm mb-6">
+            <p className="text-sm mb-6 text-white/90">
               Av. Ameghino 598, Campana, Bs As. <br /> (Está el Diego pintado en
               la esquina)
             </p>
             <p className="text-blue mb-6">
-              Teléfono: <a className="hover:text-white duration-200 ease-in-out" href="tel:+54123456789">+54 11 2393-0489</a>
+              Teléfono:{" "}
+              <a
+                title="Ir al chat"
+                target="_blank"
+                rel="noopener noreferer"
+                className="hover:text-white duration-200 ease-in-out"
+                href="https://wa.me/+541123930489"
+              >
+                +54 11 2393-0489
+              </a>
             </p>
             <div className="flex flex-row justify-center lg:justify-start gap-5 lg:gap-3">
               <a
-                href="https://twitter.com/EstiloNapoles"
+                href="https://x.com/EstiloNapoles"
                 target="_blank"
+                rel="noopener noreferer"
                 className="mb-2 lg:mb-0 lg:mr-4"
+                title="X"
               >
-                <FontAwesomeIcon className="hover:text-blue duration-200 ease-in-out" icon={faTwitter} size="2x" />
+                <FontAwesomeIcon
+                  className="hover:text-blue duration-200 ease-in-out"
+                  icon={faXTwitter}
+                  size="2x"
+                />
               </a>
               <a
+                title="Instagram"
                 href="https://www.instagram.com/estilonapoles.campana/?hl=en"
                 target="_blank"
+                rel="noopener noreferer"
               >
-                <FontAwesomeIcon className="hover:text-blue duration-200 ease-in-out" icon={faInstagram} size="2x" />
+                <FontAwesomeIcon
+                  className="hover:text-blue duration-200 ease-in-out"
+                  icon={faInstagram}
+                  size="2x"
+                />
               </a>
             </div>
-            <button
-              onClick={handleReservasClick}
-              className="animate-bounce bg-white text-blue text-sm px-4 py-2 rounded-lg font-medium hover:bg-white/90 duration-200 ease-in-out mt-6"
+            <a
+              title="Ir al chat"
+              target="_blank"
+              rel="noopener noreferer"
+              href="https://wa.me/+541123930489"
             >
-              Reservas
-            </button>
+              <button className="animate-bounce bg-white text-blue text-sm px-4 py-2 rounded-lg font-medium hover:bg-blue hover:text-white duration-200 ease-in-out mt-6">
+                Reservas
+              </button>
+            </a>
           </div>
         </div>
       </section>

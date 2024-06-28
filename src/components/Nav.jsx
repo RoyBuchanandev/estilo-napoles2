@@ -24,7 +24,7 @@ const NavList = ({ closeMenu }) => {
             smooth={true}
             spy={true}
             to="home"
-            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
           >
             Home
           </Link>
@@ -35,10 +35,11 @@ const NavList = ({ closeMenu }) => {
           className="flex justify-end lg:px-4 py-3 border-b-[1px] border-black/10 lg:border-none"
         >
           <Link
+          offset={-50}
             smooth={true}
             spy={true}
             to="menu"
-            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
           >
             Menú
           </Link>
@@ -49,12 +50,28 @@ const NavList = ({ closeMenu }) => {
           className="flex justify-end lg:px-4 py-3 border-b-[1px] border-black/10 lg:border-none"
         >
           <Link
+          offset={-50}
             smooth={true}
             spy={true}
             to="about"
-            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
           >
             Nosotrxs
+          </Link>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:px-4 py-3 border-b-[1px] border-black/10 lg:border-none"
+        >
+          <Link
+            smooth={true}
+            spy={true}
+            offset={-70}
+            to="events"
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
+          >
+            Eventos
           </Link>
         </Typography>
 
@@ -67,7 +84,7 @@ const NavList = ({ closeMenu }) => {
             smooth={true}
             spy={true}
             to="footer"
-            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
           >
             Contacto
           </Link>
@@ -87,7 +104,7 @@ const NavList = ({ closeMenu }) => {
             spy={true}
             to="home"
             onClick={handleClose}
-            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
           >
             Home
           </Link>
@@ -98,11 +115,12 @@ const NavList = ({ closeMenu }) => {
           className="flex justify-end lg:px-4 py-3 border-b-[1px] border-black/10 lg:border-none"
         >
           <Link
+          offset={-70}
             smooth={true}
             spy={true}
             to="menu"
             onClick={handleClose}
-            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
           >
             Menú
           </Link>
@@ -117,9 +135,26 @@ const NavList = ({ closeMenu }) => {
             spy={true}
             to="about"
             onClick={handleClose}
-            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
+            offset={-60}
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
           >
             Nosotrxs
+          </Link>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:px-4 py-3 border-b-[1px] border-black/10 lg:border-none"
+        >
+          <Link
+            smooth={true}
+            spy={true}
+            to="events"
+            onClick={handleClose}
+            offset={-70}
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
+          >
+            Eventos
           </Link>
         </Typography>
 
@@ -133,7 +168,7 @@ const NavList = ({ closeMenu }) => {
             spy={true}
             to="footer"
             onClick={handleClose}
-            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-black text-base transition-colors"
+            className="cursor-pointer hover:text-orange font-medium flex items-center font-poppins text-gray text-base transition-colors"
           >
             Contacto
           </Link>
@@ -178,8 +213,7 @@ const Nav = () => {
                   <img
                     className="w-12"
                     src={Logo}
-                    loading="lazy"
-                    alt="Estilo Nápoles"
+                    alt="Estilo Nápoles Logo"
                   />
                 </Link>
                 <img
@@ -199,9 +233,9 @@ const Nav = () => {
               onClick={() => setOpenNav(!openNav)}
             >
               {openNav ? (
-                <XMarkIcon className="w-7 text-black" strokeWidth={1.5} />
+                <XMarkIcon className="w-7 text-gray" strokeWidth={1.5} />
               ) : (
-                <Bars3Icon className="w-7 text-black" strokeWidth={1.5} />
+                <Bars3Icon className="w-7 text-gray" strokeWidth={1.5} />
               )}
             </IconButton>
           </div>

@@ -10,20 +10,21 @@ import Primavera from '../assets/imgs/primavera.jpeg';
 import PizzaLibreApac from '../assets/imgs/pizzalibreporapac.jpeg';
 import SegundoCumpleEstilo from '../assets/imgs/segundocumpleestilo.jpeg';
 import FiestaPatria from '../assets/imgs/fiestapatria.jpeg';
+import Layout from "./Layout";
 
 const Carrusel = () => {
     return (
         <>
-            <section className={"mx-auto px-4 md:px-8 lg:px-0 lg:max-w-[1120px] font-poppins pb-20 h-fit"}>
+            <Layout id="events" className={"mx-auto px-4 md:px-8 lg:px-0 lg:max-w-[1120px] font-poppins pb-10 pt-8 h-fit"}>
                 <div className="flex flex-col items-center mb-8">
-                    <h2 className="text-5xl lg:text-7xl text-blue bavi mb-4 text-center">
+                    <h2 className="text-5xl lg:text-7xl text-blue bavi mb-4 text-center drop-shadow-blue">
                         Eventos
                     </h2>
-                    <h3 className="flex items-center text-lg text-gray font-poppins mb-8 text-center w-[90%] md:w-[60%]">
-                        <i className="fas fa-flag icon-mr"></i> Como nuestro espacio es para todxs, buscamos que aquellos que nos eligen puedan crear momentos que quedan en nuestra historia. Trabajamos y nos divertimos, porque el buen sabor también lo arman los buenos recuerdos
+                    <h3 className="flex items-center text-base text-gray font-poppins mb-2 text-center w-[90%] md:w-[60%]">
+                        <i className="fas fa-flag icon-mr"></i> Como nuestro espacio es para todxs, buscamos que aquellos que nos eligen puedan crear momentos que quedan en nuestra historia. 
                     </h3>
                 </div>
-                <Carousel loop={true} autoplay={true} className="rounded-lg shadow-lg h-[70vh] overflow-hidden mb-16">
+                <Carousel loop={true} autoplay={true} className="rounded-lg shadow-md h-[70vh] overflow-hidden mb-10">
                     {/* 1 */}
                     <div className="relative h-full w-full">
                         <img src={Diegol} alt="Cumpleaños de nuestro D10S" className="h-full w-full object-cover" />
@@ -179,23 +180,24 @@ const Carrusel = () => {
                         </div>
                     </div>
                 </Carousel>
-                <div className="flex flex-col items-center mt-16">
-                    <h2 className="text-5xl lg:text-7xl text-blue bavi mb-4 text-center">
+
+                <div className="flex flex-col items-center">
+                    <h2 className="w-full lg:w-[60%] text-5xl lg:text-7xl text-blue bavi mb-4 text-center drop-shadow-blue">
                         Todo lo que vivimos en un video
                     </h2>
-                    <div className="w-full rounded-lg shadow-lg h-[70vh] overflow-hidden">
+                    <p className="text-gray font-poppins mb-8 text-center w-[90%] md:w-[50%]">Trabajamos y nos divertimos, porque el buen sabor también lo arman los buenos recuerdos.</p>
+                    <div className="w-full rounded-lg shadow-md h-[70vh] overflow-hidden">
                         <iframe
                             width="100%"
                             height="100%"
                             src="https://www.youtube.com/embed/Dn4fBsg3Um8?si=ZDfxeMZRbPe6Z9CY"
                             title="YouTube video player"
-                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         ></iframe>
                     </div>
                 </div>
-            </section>
+            </Layout>
             <div className="z-50 bg-[url('./assets/blackNavBorder.svg')] w-full h-6 bg-no-repeat rotate-180 -mt-1"></div>
         </>
     );
