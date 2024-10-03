@@ -47,7 +47,7 @@ const MostOrders = () => {
               className="drop-shadow-blue animate-bounce bg-blue text-white hover:bg-blue-700 font-semibold py-3 px-7 rounded-lg mr-4"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1nA7lT5gOe7Mb8edlqZBKVsOXvp1LWHS6/view?usp=sharing"
+                  "https://drive.google.com/file/d/1Xts_QQUZzVZWngkBHNzo2AvMLcE4E8OD/view?usp=drive_link"
                 )
               }
             >
