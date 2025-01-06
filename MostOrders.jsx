@@ -42,22 +42,21 @@ const MostOrders = () => {
             <img src={Vegetarian} alt="Vegano" className="inline-block w-12" />
           </span>
           {/* Aquí agregamos los botones "Ver Precios" y "Reservar" al final de la sección */}
-                   <div className="text-center mt-10">
-  <button
-    className="drop-shadow-blue animate-bounce bg-blue text-white hover:bg-blue-700 font-semibold py-3 px-7 rounded-lg mr-4"
-    onClick={() => {
-      // Abre un modal o contenedor con el iframe
-      const modal = document.createElement('div');
-      modal.innerHTML = `
-        <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999; display:flex; justify-content:center; align-items:center;">
-          <iframe src="/src/assets/imgs/cartaen.pdf" style="width:90%; height:90%; border:none;"></iframe>
-          <button onclick="this.parentElement.remove()" style="position:absolute; top:20px; right:20px; color:white;">Cerrar</button>
-        </div>
-      `;
-      document.body.appendChild(modal);
-    }}
-  >
-    Ver Precios
+                  <div className="text-center mt-10">
+ <button
+   className="drop-shadow-blue animate-bounce bg-blue text-white hover:bg-blue-700 font-semibold py-3 px-7 rounded-lg mr-4"
+   onClick={() => {
+     const modal = document.createElement('div');
+     modal.innerHTML = `
+       <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999; display:flex; justify-content:center; align-items:center;">
+         <iframe src="/cartaen.pdf" style="width:90%; height:90%; border:none;"></iframe>
+         <button onclick="this.parentElement.remove()" style="position:absolute; top:20px; right:20px; color:white; background:red; padding:8px 16px; border-radius:4px;">Cerrar</button>
+       </div>
+     `;
+     document.body.appendChild(modal);
+   }}
+ >
+   Ver Precios
             </button>
             <button
               className="drop-shadow-red animate-bounce bg-red text-white hover:bg-red-700 font-semibold py-3 px-7 rounded-lg"
