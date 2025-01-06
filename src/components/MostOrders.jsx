@@ -47,12 +47,26 @@ const MostOrders = () => {
               onClick={() => {
                 const modal = document.createElement("div");
                 modal.innerHTML = `
-        <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999; display:flex; justify-content:center; align-items:center;">
-          <iframe src="/cartaen.pdf" type="application/pdf" style="width:90%; height:90%; border:none;"></iframe>
-          <button onclick="this.parentElement.remove()" style="position:absolute; top:20px; right:20px; color:white; padding:8px 16px;">✕</button>
+        <div style="position:fixed; top:0; left:0; right:0; bottom:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999; display:flex; justify-content:center; align-items:center; -webkit-overflow-scrolling:touch;">
+          <div style="position:relative; width:90%; height:90%; max-height:90vh; max-width:1200px; background:white; border-radius:8px; overflow:hidden;">
+            <button 
+              onclick="this.parentElement.parentElement.remove()" 
+              style="position:absolute; top:10px; right:10px; background:transparent; color:black; padding:8px 16px; cursor:pointer; font-size:24px; border:none; z-index:1000;"
+            >✕</button>
+            <iframe 
+              src="/cartaen.pdf"
+              style="width:100%; height:100%; border:none; margin:0; padding:0; -webkit-overflow-scrolling:touch;"
+            ></iframe>
+          </div>
         </div>
       `;
                 document.body.appendChild(modal);
+                document.body.style.overflow = "hidden";
+
+                const closeBtn = modal.querySelector("button");
+                closeBtn.addEventListener("click", () => {
+                  document.body.style.overflow = "auto";
+                });
               }}
             >
               Ver Precios
