@@ -53,10 +53,11 @@ const MostOrders = () => {
               onclick="this.parentElement.parentElement.remove()" 
               style="position:absolute; top:10px; right:10px; background:transparent; color:black; padding:8px 16px; cursor:pointer; font-size:24px; border:none; z-index:1000;"
             >✕</button>
-            <iframe 
-              src="/cartaen.pdf"
-              style="width:100%; height:100%; border:none; margin:0; padding:0; -webkit-overflow-scrolling:touch;"
-            ></iframe>
+            <embed 
+              src="/cartaen.pdf#toolbar=0&navpanes=0&scrollbar=0"
+              type="application/pdf"
+              style="width:100%; height:100%; border:none; margin:0; padding:0;"
+            />
           </div>
         </div>
       `;
