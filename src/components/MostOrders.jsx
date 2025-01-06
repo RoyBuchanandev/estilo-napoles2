@@ -47,11 +47,11 @@ const MostOrders = () => {
               onClick={() => {
                 const modal = document.createElement("div");
                 modal.innerHTML = `
-       <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999; display:flex; justify-content:center; align-items:center;">
-         <iframe src="/cartaen.pdf" style="width:90%; height:90%; border:none;"></iframe>
-         <button onclick="this.parentElement.remove()" style="position:absolute; top:20px; right:20px; color:white; padding:8px 16px;">✕</button>
-       </div>
-     `;
+        <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999; display:flex; justify-content:center; align-items:center;">
+          <iframe src="/cartaen.pdf" type="application/pdf" style="width:90%; height:90%; border:none;"></iframe>
+          <button onclick="this.parentElement.remove()" style="position:absolute; top:20px; right:20px; color:white; padding:8px 16px;">✕</button>
+        </div>
+      `;
                 document.body.appendChild(modal);
               }}
             >
